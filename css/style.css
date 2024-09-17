@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: radial-gradient(circle, #000, #111); /* خلفية متدرجة */
+    font-family: 'Press Start 2P', cursive; /* خط يشبه ألعاب الأركيد */
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    border: 5px solid #ff4500; /* حدود برتقالية لامعة */
+    background: rgba(0, 0, 0, 0.8); /* خلفية شفافة قليلاً */
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.6); /* تأثير ظل برتقالي */
+    border-radius: 15px; /* زوايا مستديرة */
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(145deg, #ff4500, #d32f2f); /* تدرج برتقالي أحمر */
+    color: #fff;
+    border: 3px solid #ff4500;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.7); /* ظل إضافي */
+    text-transform: uppercase; /* نص عريض وكبير */
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.9); /* تغيير اللون عند التمرير */
+    transform: translateY(-5px); /* رفع الزر عند التمرير */
+    box-shadow: 0 12px 30px rgba(255, 69, 0, 0.7); /* زيادة الظل عند التمرير */
+}
+
+#killCount {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #ff4500;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.7);
+    font-weight: bold;
+    border: 3px solid #ff4500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#pauseButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #ff4500;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border: 3px solid #ff4500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.7);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#pauseButton:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 69, 0, 0.7);
+}
